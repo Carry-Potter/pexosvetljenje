@@ -1,0 +1,110 @@
+.custom-input::placeholder {
+    color: rgb(148, 147, 147) !important;
+  }
+
+.slick-slide {
+  transition: all 0.3s ease;
+  transform: scale(0.8);
+}
+
+.slick-center {
+  transform: scale(1);
+}
+
+/* Stilizacija slika u slajderu */
+.slick-slide img {
+    margin-top: 30px; /* Gornja margina za slike */
+    margin-bottom: 30px; /* Donja margina za slike */
+    transition: all 0.3s ease; /* Glatka tranzicija za sve promene */
+    box-shadow: 8px 8px 8px rgba(0, 123, 255, 0.5); /* Senka za sve slike */
+}
+
+/* Stilizacija centralne slike u slajderu */
+.slick-center img {
+    /* Višeslojna senka za istaknutu centralnu sliku */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 10px rgba(0, 123, 255, 0.6), 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Stilizacija tačkica za navigaciju slajdera */
+.slick-dots li button:before {
+    color: #007bff; /* Plava boja za tačkice */
+    opacity: 0.5; /* Providnost neaktivnih tačkica */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #007bff;
+  font-size: 24px;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 15px;
+}
+
+.slick-next {
+  right: 15px;
+}
+
+/* Hover efekat za strelice */
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: #0056b3; /* Tamnija plava za hover stanje */
+}
+
+.navbar-custom {
+  background-color: rgba(1, 6, 11, 0.9) !important;
+}
+
+.section-full-height {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0; /* Dodajemo padding da bismo izbjegli preklapanje sa fiksnom navigacijom */
+}
+
+body, html {
+  font-family: 'Exo 2', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600; /* Možete prilagoditi težinu fonta prema vašim preferencijama */
+}
+
+p, a, span, div {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400; /* Možete prilagoditi težinu fonta prema vašim preferencijama */
+}
+
+.navbar-brand {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700; /* Možete prilagoditi težinu fonta prema vašim preferencijama */
+}
+
+.section-title {
+  font-size: 3rem; /* Povećavamo veličinu fonta */
+  font-weight: 700; /* Podebljani font */
+  text-transform: uppercase; /* Sva slova velika */
+  margin-bottom: 2rem; /* Dodajemo malo više prostora ispod naslova */
+  letter-spacing: 2px; /* Dodajemo malo razmaka između slova */
+  color: #007bff; /* Plava boja, možete prilagoditi prema vašoj shemi boja */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Dodajemo blagu senku za dubinu */
+}
+
+/* Responzivnost za manje ekrane */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
